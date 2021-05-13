@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--Responsividade-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Owl CSS-->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+
+
+    <title> Netflix </title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#netflix"><img src="img/netflix-logo.png" class="logo" alt="logo da Netflix em fonte vermelha">  
+            <nav>
+                <a href="#inicio"> Início </a>
+                <a href="#series"> Séries </a>
+                <a href="#filmes"> Filmes </a>
+                <a href="#favoritos"> Favoritos </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container"> <!--Classe Wrapper feitas para serem alteradas levando em conta o tamanho de tela-->
+                <img src="img/titulo-designated-survivor.png" alt=" Série Designated Survivor" class="titulo-filme-principal">
+                <p class="descricao"> O Presidente dos EUA e todos os outros membros do governo que estavam presentes morrem em um ataque ao Capitólio. Tom Kirkman, o secretário de habitações e desenvolvimento urbano,
+                      o funcionário público de mais alto escalão ainda vivo, vira presidente do dia para noite. 
+                </p>
+                <div class="botoes-filmeprincipal">
+                    <!--Role = button é utilizado para deixar claro, mesmo em outros ambientes que ele renderize de outra forma, que ele é um botão -->
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i> ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-plus"></i> MINHA LISTA
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="carrosel-series-lista">
+        <h3> Séries Favoritas </h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-series-lista" src="img/mini-1.jpg" alt=" Mr. Robot">
+            </div>
+            <div class="item">
+                <img class="box-series-lista" src="img/mini-2.jpg" alt=" Euphoria">
+            </div>
+            <div class="item">
+                <img class="box-series-lista" src="img/mini-3.jpg" alt=" Breaking Bad">
+            </div>
+            <div class="item">
+                <img class="box-series-lista" src="img/mini-4.jpg" alt=" Black Mirror ">
+            </div>
+            <div class="item">
+                <img class="box-series-lista" src="img/mini-5.jpg" alt=" Skins"> 
+            </div>
+            <div class="item">
+                <img class="box-series-lista" src="img/mini-6.jpg" alt=" Dr. House">
+            </div>
+            <div class="item">
+                <img class="box-series-lista" src="img/mini-7.jpg" alt=" Sherlock">
+            </div>
+            <div class="item">
+                <img class="box-series-lista" src="img/mini-8.jpg" alt=" The Queen's Gambit">
+            </div>
+            <div class="item">
+                <img class="box-series-lista" src="img/mini-9.jpg" alt=" The End of the F***ing World">
+            </div>
+            <div class="item">
+                <img class="box-series-lista" src="img/mini-10.jpg" alt=" Riverdale">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/72e90e460f.js" crossorigin="anonymous"></script>
+    <script src="javascript/owl/jquery.min.js"></script>
+    <script src="javascript/owl/owl.carousel.min.js"></script>
+    <script src="javascript/owl/setup.js"></script>
+</body>
+</html>

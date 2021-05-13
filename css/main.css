@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Definir variáveis no css*/
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+/* reset CSS, altera configurações padrão de cada navegador para 0 - padding e margin.*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* uma vez definido o tamanho de um box, ele mantém-se fiel mesmo que adicionado padding.*/
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: var(--preto);
+    color: #fff;
+}
+
+/* Barra de Navegação*/
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+header .logo{
+    width: 150px;
+    padding: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Filme Principal*/
+
+.filme-principal {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)100%), url("../img/designated-survivor.jpg"); /* Linear gradiente nesse caso cria uma camada de preto com transparência que escurece a imagem paracontrastar com o texto.*/
+    height: 600px;
+    background-size: cover; /* Faz com que a imagem cubra a área de cobertura do bloco*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Para que se alinhem à direita */
+    margin-bottom: 10px;
+}
+
+.filme-principal .titulo-filme-principal{
+    width: 30%;
+    min-width: 260px;
+}
+
+.filme-principal .descricao {
+    width: 40%;
+    min-width: 250px;
+    margin: 30px 0 ;
+}
+
+.botao {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 12px;
+    cursor: pointer; /* Ao passar o mouse indica que é clicável*/
+    font-weight: 600;
+    transition: .3s ease all;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.botao:first-child {
+    background-color: var(--vermelho);
+    margin-right: 15px;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.container {
+    margin: 0 20px;
+}
+
+/* Carrossel */
+
+h3{
+    margin: 10px;
+}
+
+.box-series-lista {
+    width: 20%;
+    height: 20%;
+    display: block;
+}
